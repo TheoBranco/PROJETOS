@@ -91,7 +91,7 @@ function draw() {
   
     //code to play cycle bell sound
   if(keyDown("space")) {
-    cycleBell.play();
+    cycleBell.play()
   }
   
   //creating continous opponent players
@@ -111,12 +111,14 @@ function draw() {
      gameState = END;
      player1.velocityY = 0;
      player1.addAnimation("opponentPlayer1",oppPink2Img);
+     cycleBell.play();
     }
     
     if(yellowCG.isTouching(mainCyclist)){
       gameState = END;
       player2.velocityY = 0;
       player2.addAnimation("opponentPlayer2",oppYellow2Img);
+      cycleBell.play();
     }
     
     if(redCG.isTouching(mainCyclist)){
