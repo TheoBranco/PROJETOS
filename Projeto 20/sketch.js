@@ -72,7 +72,7 @@ function draw() {
 	  
 	  rect(quadrado.position.x, quadrado.position.y, 10, 10,)  
   
-	  rect(bola.position.x, bola.position.y, 10);
+	  ellipse(bola.position.x, bola.position.y, 10);
   
 	  rect(ground.position.x, ground.position.y, width * 2, 1);
  
